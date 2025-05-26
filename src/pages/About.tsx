@@ -40,7 +40,7 @@ const About: React.FC = () => {
         <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-white">About the Creator</h2>
         <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
           <img
-            src="/public/saket1.jpg"
+            src="/saket1.jpg"
             alt="Saket Kumar Sinha"
             className="w-24 h-24 rounded-full object-cover"
           />
