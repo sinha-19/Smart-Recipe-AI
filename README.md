@@ -100,7 +100,7 @@ src/
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
 
@@ -112,4 +112,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Saket Kumar Sinha - [LinkedIn](https://linkedin.com) - linkedin.com/in/saketkumarsinha19
 
-Project Link: https://smart-recipe-ai-liart.vercel.app/
+Project Link: https://smart-recipe-ai-eosin.vercel.app/
