@@ -4,6 +4,47 @@ A modern web application that helps you discover recipes based on ingredients yo
 
 ![SmartRecipe Creator](https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
 
+---
+
+## 🗺️ Workflow Diagram
+
+```mermaid
+flowchart TD
+    Start([User Opens App])
+    Start --> Home[Home Page / Dashboard]
+    Home --> EnterIng[Enter Ingredients]
+    EnterIng --> Fetch[Fetch Recipes from API]
+    Fetch --> ShowRec[Show Suggested Recipes]
+    ShowRec --> ViewDetails{View Recipe Details?}
+    ViewDetails -- Yes --> Details[Show Recipe Details]
+    ViewDetails -- No --> Home
+    ShowRec --> SaveFav{Save as Favorite?}
+    SaveFav -- Yes --> Save[Add to Favorites]
+    SaveFav -- No --> ShowRec
+    Home --> PlanMeal{Go to Meal Planning?}
+    PlanMeal -- Yes --> MealPlan[Meal Planning Page]
+    MealPlan --> Assign[Assign Recipes to Meals/Days]
+    Assign --> SavePlan[Save/Edit/Delete Meal Plan]
+    SavePlan --> MealPlan
+    MealPlan --> Home
+    Home --> ViewFav{View Favorites?}
+    ViewFav -- Yes --> Favorites[Show Favorites]
+    Favorites --> Search[Search Favorites]
+    Search --> ViewDetails
+    Favorites --> DeleteFav{Delete Recipe?}
+    DeleteFav -- Yes --> Remove[Remove from Favorites]
+    Remove --> Favorites
+    DeleteFav -- No --> Favorites
+    Home --> SearchAll{Search All Recipes?}
+    SearchAll -- Yes --> SearchAPI[Search Recipes]
+    SearchAPI --> ShowRec
+    Home --> ToggleTheme[Toggle Dark/Light Mode]
+    ToggleTheme --> Home
+    Home --> End([Close App])
+```
+
+---
+
 ## Features
 
 - 🧪 **Ingredient-Based Recipe Generation**: Enter ingredients you have, and get personalized recipe suggestions
@@ -13,6 +54,8 @@ A modern web application that helps you discover recipes based on ingredients yo
 - 📱 **Responsive Design**: Works seamlessly on desktop and mobile devices
 - 🔍 **Recipe Search**: Search through your saved recipes by title or ingredients
 
+---
+
 ## Tech Stack
 
 - **Frontend Framework**: React 18 with TypeScript
@@ -21,6 +64,14 @@ A modern web application that helps you discover recipes based on ingredients yo
 - **Icons**: Lucide React
 - **API Integration**: Spoonacular API
 - **Build Tool**: Vite
+
+---
+
+## 🌐 Live Demo
+
+[SmartRecipe Creator](https://smart-recipe-ai-eosin.vercel.app/)
+
+---
 
 ## Getting Started
 
@@ -54,17 +105,21 @@ A modern web application that helps you discover recipes based on ingredients yo
 
 The application will be available at `http://localhost:5173`
 
+---
+
 ## Project Structure
 
 ```
 src/
 ├── components/        # Reusable UI components
-├── contexts/         # React context providers
-├── pages/           # Page components
-├── services/        # API and other services
-├── types/           # TypeScript type definitions
-└── main.tsx         # Application entry point
+├── contexts/          # React context providers
+├── pages/             # Page components
+├── services/          # API and other services
+├── types/             # TypeScript type definitions
+└── main.tsx           # Application entry point
 ```
+
+---
 
 ## Features in Detail
 
@@ -90,6 +145,8 @@ src/
 - Animated transitions
 - Loading states and error handling
 
+---
+
 ## Contributing
 
 1. Fork the repository
@@ -98,9 +155,13 @@ src/
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+---
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+---
 
 ## Acknowledgments
 
@@ -108,8 +169,10 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Icons by [Lucide](https://lucide.dev/)
 - UI inspiration from various cooking and recipe websites
 
+---
+
 ## Contact
 
-Saket Kumar Sinha - [LinkedIn](https://linkedin.com) - linkedin.com/in/saketkumarsinha19
+Saket Kumar Sinha - [LinkedIn](https://linkedin.com/in/saketkumarsinha19)
 
 Project Link: https://smart-recipe-ai-eosin.vercel.app/
